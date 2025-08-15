@@ -1,6 +1,5 @@
 /* ---------------------------------------------STYLE------------------------------------------------- */
 body {
-    border: black solid 1px;
     font-family: Roboto, Helvetica, sans-serif
 }
 
@@ -148,9 +147,11 @@ footer {
 
 }
 .illustration {
-    width: 200px;
-    height: 200px;
-    border: black solid 1px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .subtext {
     width: 150px;
