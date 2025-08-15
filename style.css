@@ -32,7 +32,7 @@ body {
     font-size: 18px;
     font-weight: 700;
     padding: 5px 10px;
-    border: #1F2937; solid 1px;
+    border: #1F2937 solid 1px;
     border-radius: 4.5px;
 }
 /*  ---------------------------INFO---------------------------  */
@@ -53,12 +53,17 @@ body {
     font-weight: light;
     font-style: italic;
 }
-
+.quote-writer{
+    font-weight: 800;
+}
 
 /*  ---------------------------BOTTOM---------------------------  */
 .bottom {
     color: white;
     background-color: #3882F6;
+}
+.text-top {
+    font-weight: 950;
 }
 .bottom button {
     background-color: #3882F6;
@@ -74,4 +79,115 @@ footer {
     background: #1F2937;
     color: white;
 }
-/* ---------------------------------------------STYLE------------------------------------------------- */
+/* ---------------------------------------------/STYLE------------------------------------------------- */
+
+/* ---------------------------------------------LAYOUT ------------------------------------------------- */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+/*  ---------------------------HEADER--------------------------- */
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 0px 60px 0px;
+    gap: 50px;
+}
+
+.header-row1, .header-row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 100px;
+}
+.header-links {     /* header-row1 */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    flex-wrap: nowrap;
+    min-width: 500px;
+}
+.header-logo {
+    min-width: 200px;
+}
+.left {     /* header-row2 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+    gap: 0px;
+    min-width: 600px;
+}
+.Hero-Main-text {
+    padding: 0px 50px 0px 0px;
+}
+.Hero-Main-text p{
+    margin: 0px;
+}
+/*  ---------------------------INFO---------------------------  */
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.items {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.illustration {
+    width: 200px;
+    height: 200px;
+    border: black solid 1px;
+}
+.subtext {
+    width: 150px;
+    text-align: center;
+}
+/*  ---------------------------/INFO---------------------------  */
+
+/*  ---------------------------QUOTE---------------------------  */
+.quote {
+    flex: display;
+    flex-direction: column;
+    padding: 100px 500px;
+    min-width: 500px;
+}
+.quote-writer p{
+    text-align: end;
+}
+/*  ---------------------------/QUOTE---------------------------  */
+
+/*  ---------------------------BOTTOM---------------------------  */
+.bottom {
+    border-radius: 10px;
+    margin: 100px 400px;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 600px;
+}
+/*  ---------------------------/BOTTOM---------------------------  */
+
+/*  ---------------------------FOOTER---------------------------  */
+footer p{
+    text-align: center;
+}
+footer {
+    padding: 10px;
+}
+/*  ---------------------------/FOOTER---------------------------  */
+
